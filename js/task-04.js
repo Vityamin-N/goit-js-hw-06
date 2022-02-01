@@ -1,4 +1,4 @@
-let valueCounter = 0;
+let counterValue = 0;
 const actions = {
     decrButton: document.querySelector("[data-action=decrement]"),
     incrButton: document.querySelector("[data-action=increment]"),
@@ -14,10 +14,10 @@ const actions = {
 // }
 
 actions.incrButton.addEventListener("click", () => {
-    valueCounter += 1;
+    counterValue += 1;
     actions.value.textContent = valueCounter;
 });
 actions.decrButton.addEventListener("click", () => {
-    valueCounter -= 1;
+    counterValue -= 1;
     actions.value.textContent = valueCounter;
 });
