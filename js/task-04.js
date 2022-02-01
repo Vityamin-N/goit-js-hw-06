@@ -15,9 +15,9 @@ const actions = {
 
 actions.incrButton.addEventListener("click", () => {
     counterValue += 1;
-    actions.value.textContent = valueCounter;
+    actions.value.textContent = counterValue;
 });
 actions.decrButton.addEventListener("click", () => {
     counterValue -= 1;
-    actions.value.textContent = valueCounter;
+    actions.value.textContent = counterValue;
 });
